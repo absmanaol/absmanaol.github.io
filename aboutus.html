@@ -1,0 +1,153 @@
+<html lang="en">    
+<head>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+<title>Game</title>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.background{
+    background-color: white;
+    height: max-content;
+    padding-top: 5px;
+}
+.text{
+    color: black;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.container {
+    text-align: center;
+
+}
+.header {
+    padding: 40px;
+    text-align: center;
+    background-image:url(https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-attachment:scroll;
+    color: 	#FFFFFF;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #ff8fa3;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar span.right {
+    float: right;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .script {
+    overflow: hidden;
+    float: right;
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  } 
+  
+  .navbar a:hover {
+    background-color: #ffb3c1;
+    color: black;
+  }
+  .intro {
+    background-color: #ffb3c1;
+    padding: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+</style>
+<script>var counter = 0;
+    function Answers() {
+      var text = (document.getElementById("Answer").value);
+      var c = "Correct!";
+      var i = "Incorrect :(";
+      var w = "You Won!!!" 
+      var form = (document.getElementById("myForm"));
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
+      if (text.includes("SYNTAX")) {   
+        counter++;
+        document.getElementById("score").innerHTML = counter;
+        alert(c);
+      }
+      else if (text.includes("STRING")) {
+        counter++;
+    document.getElementById("score").innerHTML = counter;
+        alert(c);
+      }
+      else if (text.includes("JAVASCRIPT")) {
+      counter++;
+      document.getElementById("score").innerHTML = counter;
+        alert(c);
+        }
+        else if (text.includes("OPERATOR")) {
+        counter++;
+        document.getElementById("score").innerHTML = counter;
+          alert(c);
+        }
+        else if (text.includes("VARIABLE")) {
+        counter++;
+        document.getElementById("score").innerHTML = counter;
+          alert(c);
+        }
+        else if (text.includes("STYLE")) {
+        counter++;
+        document.getElementById("score").innerHTML = counter;
+          alert(c);
+        }
+      else { alert(i) ;
+      }
+      if (counter == 6){
+        alert(w);
+      }
+    }
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>  
+<body>
+    <div class="header">
+        <h1>Word Search</h1>
+        <h2>by Group 3</h2>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cheats.html">Cheats</a>
+        <a href="#">About Us</a>
+    </div>
+    <main class="background">
+    <div class="intro">
+            <h1>Druce Gutierrez</h1>
+            <h3>yes</h3><br>
+            <h1>Elijah Espere</h1>
+            <h3>Hello I am Elijah from 9-Samat. There are atleast three Elijahs in 2025 and I'm definetly the dumbest.</h3><br>
+            <h1>Aldrich Manaol</h1>
+            <h3>I am an aspiring pilot and a gamer. My hobbies are gaming and socialziing with friends. :D</h3><br>
+    </div>
+    </main>
+    </body>
+    </html>
